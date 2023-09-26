@@ -49,7 +49,7 @@ public class Main {
         boolean[] myArray3 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < myArray3.length; j++) {
             if (j % 2 == 0) {
                 myArray3[j] = true;
             }
@@ -68,7 +68,7 @@ public class Main {
         boolean[] myArray4 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < myArray4.length; j++) {
             myArray4[j] = j % 2 == 0; // <- (j % 2 == 0) ist immer abwechselnd 'true' oder 'false'!
         }
 
@@ -84,7 +84,7 @@ public class Main {
         boolean[] myArray5 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < myArray5.length; j++) {
             myArray5[j] = (j & 1) == 0;
         }
 
