@@ -14,9 +14,9 @@ public class Main {
         boolean[] myArray1 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int position = 0; position < myArray1.length; position += 2) {
+        for (int pos = 0; pos < myArray1.length; pos += 2) {
             // Jedes Element entspricht der negierten Version des Vorgängers:
-            myArray1[position + 1] = !myArray1[position];
+            myArray1[pos + 1] = !myArray1[pos];
         }
 
         System.out.println("myArray1: " + Arrays.toString(myArray1));
@@ -31,9 +31,9 @@ public class Main {
         boolean[] myArray2 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int position = 0; position < myArray2.length - 1; position++) {
+        for (int pos = 0; pos < myArray2.length - 1; pos++) {
             // Jedes Element entspricht der negierten Version des Vorgängers:
-            myArray2[position + 1] = !myArray2[position];
+            myArray2[pos + 1] = !myArray2[pos];
         }
 
         System.out.println("myArray2: " + Arrays.toString(myArray2));
@@ -49,9 +49,9 @@ public class Main {
         boolean[] myArray3 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < myArray3.length; j++) {
-            if (j % 2 == 0) {
-                myArray3[j] = true;
+        for (int pos = 0; pos < myArray3.length; pos++) {
+            if (pos % 2 == 0) {
+                myArray3[pos] = true;
             }
         }
 
@@ -68,8 +68,8 @@ public class Main {
         boolean[] myArray4 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < myArray4.length; j++) {
-            myArray4[j] = j % 2 == 0; // <- (j % 2 == 0) ist immer abwechselnd 'true' oder 'false'!
+        for (int pos = 0; pos < myArray4.length; pos++) {
+            myArray4[pos] = pos % 2 == 0; // <- (pos % 2 == 0) ist immer abwechselnd 'true' oder 'false'!
         }
 
         System.out.println("myArray4: " + Arrays.toString(myArray4));
@@ -84,8 +84,8 @@ public class Main {
         boolean[] myArray5 = new boolean[10];
         // { false, false, false, false, false, false, false, false, false, false }
 
-        for (int j = 0; j < myArray5.length; j++) {
-            myArray5[j] = (j & 1) == 0;
+        for (int pos = 0; pos < myArray5.length; pos++) {
+            myArray5[pos] = (pos & 1) == 0;
         }
 
         System.out.println("myArray5: " + Arrays.toString(myArray5));
